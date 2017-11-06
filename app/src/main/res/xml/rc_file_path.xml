@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path name="rc_external_path" path="."/>
+    <external-path path="" name="camera_photos" />
+
+
+<!--android:authorities：类似schema，命名空间之类，后面会用到。
+android:exported：false表示我们的provider不需要对外开放。
+android:grantUriPermissions：申明为true，你才能获取临时共享权限。-->
+</paths>

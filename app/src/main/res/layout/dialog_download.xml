@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@color/colorWhite">
+    <TextView
+        android:id="@+id/tv_downloadTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"/>
+    <ProgressBar
+        style="@style/ProgressBarDownload"
+        android:id="@+id/pb_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/btn_installApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:padding="8dp"
+        android:gravity="center"
+        android:text="下载中..."
+        android:textSize="18sp"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/selector_shape_blue_gray"
+        android:clickable="false"/>
+</LinearLayout>

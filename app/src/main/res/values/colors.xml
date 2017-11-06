@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2ca9ea</color>
+    <color name="colorPrimaryDark">#2ca9ea</color>
+    <color name="colorAccent">#2ca9ea</color>
+    <color name="colorTheme">#2ca9ea</color>
+
+    <color name="colorGrayBg">#F3F3F3</color>
+    <color name="colorOrangeDark">#FC992C</color>
+    <color name="colorLightAccent">#e48967</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorWelfareBG">#fafafa</color>
+    <color name="colorRed">#f00</color>
+    <color name="colorGray">#888</color>
+    <color name="colorTrans">#0fff</color>
+    <color name="colorBlue">#1FA5FF</color>
+    <color name="colorYellow">#FFB81F</color>
+    <color name="colorGreen">#00CC07</color>
+    <color name="colorLightGray">#CCCCCC</color>
+    <color name="colorDeepGray">#666666</color>
+    <color name="colorDeepBlack">#333333</color>
+    <color name="colorLightRed">#EF5853</color>
+    <color name="colorOrange">#fc992c</color>
+    <color name="colorTransGray">#6666</color>
+    <color name="colorLightBlue">#3DA8E7</color>
+    <color name="colorWhiteBlue">#6FB9EB</color>
+    <color name="primaryBg">#EEEEEE</color>
+    <color name="withdrawGray">#bcd7f2</color>
+    <color name="newsGray">#516B88</color>
+    <color name="colorTransGrayAddAndDelete">#EEEEEE</color>
+    <color name="transGray">#66333333</color>
+    <color name="colorPink">#edc1b8</color>
+    <color name="colorLightbule">#2151ef</color>
+    <color name="colorBg">#EEEEEE</color>
+
+    <color name="colorAccentAlphstart">#FFFD5636</color>
+    <color name="colorAccentAlphEnd">#88FD5636</color>
+
+    <color name="colorWhiteAph">#ffff</color>
+    <color name="grayEF">#EFEFEF</color>
+    <color name="btnColor">#EE5449</color>
+    <color name="colorDeepBlackAlph">#22333333</color>
+    <color name="colorPurple">#ED5AF7</color>
+
+    <color name="colorLittleYellow">#FFFBED</color>
+    <color name="colorLightPink">#FEF2F1</color>
+    <color name="colorWhiteAlph">#8fff</color>
+    <color name="colorMemberBg">#999999</color>
+    <color name="colorBlue1">#78BBE6</color>
+    <color name="colorYellow1">#FEC24A</color>
+
+    <color name="colorBlack3">#333333</color>
+
+    <color name="severBG">#EBF7FD</color>
+
+
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 联动ViewPager的圆点 -->
+    <declare-styleable name="navView">
+        <attr name="checkedImg" format="reference"/>
+        <attr name="uncheckedImg" format="reference"/>
+        <attr name="count" format="integer"/>
+        <attr name="padding" format="integer"/>
+    </declare-styleable>
+    <!-- 扇形进度条 -->
+    <declare-styleable name="sectorProgressBar">
+        <attr name="max" format="integer"/>
+        <attr name="ratio" format="float"/>
+        <attr name="shape">
+            <enum name="circle" value="0"/>
+            <enum name="rect" value="1"/>
+        </attr>
+    </declare-styleable>
+    <!-- 滚动的广告效果 -->
+    <declare-styleable name="ADTextView">
+        <!--文字进入与消失的时间-->
+        <attr name="speed" format="integer"/>
+        <!--文字段数 每种颜色一段-->
+        <attr name="num" format="integer"/>
+        <!--文字停留在中心的时间-->
+        <attr name="interval" format="integer"/>
+        <!--内容文字大小-->
+        <attr name="textSize" format="dimension"/>
+    </declare-styleable>
+
+    <!-- 日历 -->
+    <declare-styleable name="CalendarRView">
+        <attr name="showStyle">
+            <enum name="month" value="0"/>
+            <enum name="week" value="1"/>
+            <enum name="day" value="2"/>
+        </attr>
+        <attr name="firstDayOfWeek">
+            <enum name="MON" value="0"/>
+            <enum name="SUN" value="1"/>
+        </attr>
+        <attr name="selectedDay" format="string"/>
+    </declare-styleable>
+</resources>

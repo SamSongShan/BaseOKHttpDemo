@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorBg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTheme"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <ImageButton
+            android:id="@+id/toolbar_searchBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:src="@drawable/toolbar_back" />
+        <AutoCompleteTextView
+            android:id="@+id/actv_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape_solid_white"
+            android:completionThreshold="1"
+            android:drawableLeft="@drawable/home_search"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:hint="搜索感兴趣的商品"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLength="12"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl_purchaseRecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        app:tabMode="fixed"
+        app:tabTextColor="@color/colorDeepBlack"
+        app:tabSelectedTextColor="@color/colorTheme"
+        app:tabIndicatorColor="@color/colorTheme"
+        app:tabIndicatorHeight="1dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLightGray"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_purchaseRecord"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBg"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+</LinearLayout>
