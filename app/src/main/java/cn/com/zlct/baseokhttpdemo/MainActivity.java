@@ -80,16 +80,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent.setDataAndType(Uri.fromFile(apkFile), "application/vnd.android.package-archive");
 
             } else {
-                PackageManager pm = this.getPackageManager();
-                PackageInfo info = pm.getPackageArchiveInfo(filePath, PackageManager.GET_ACTIVITIES);
-                ApplicationInfo appInfo = null;
-                if (info != null) {
-                    appInfo = info.applicationInfo;
-                    String packageName = appInfo.packageName;
-                    intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION | Intent.FLAG_GRANT_WRITE_URI_PERMISSION);//给目标应用一个临时的授权
-                    Uri uriForFile = FileProvider.getUriForFile(this, packageName + ".FileProvider", apkFile);
+                
+                intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION | Intent.FLAG_GRANT_WRITE_URI_PERMISSION);//给目标应用一个临时的授权
+                Uri uriForFile = FileProvider.getUriForFile(this, PhoneUtil.getAppProcessName(this) + ".FileProvider", apkFile);
                     intent.setDataAndType(uriForFile, "application/vnd.android.package-archive");
-                }
 
             }
             startActivity(intent);
