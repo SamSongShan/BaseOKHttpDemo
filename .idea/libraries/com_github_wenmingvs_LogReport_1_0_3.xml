@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="com.github.wenmingvs:LogReport-1.0.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/d04792cb0c8732ecf160c635313018ec4e9f4767/output/jars/libs/zip4j_1.3.2.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/d04792cb0c8732ecf160c635313018ec4e9f4767/output/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/d04792cb0c8732ecf160c635313018ec4e9f4767/output/jars/libs/additionnal.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/d04792cb0c8732ecf160c635313018ec4e9f4767/output/jars/libs/mail.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/d04792cb0c8732ecf160c635313018ec4e9f4767/output/jars/libs/activation.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/d04792cb0c8732ecf160c635313018ec4e9f4767/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

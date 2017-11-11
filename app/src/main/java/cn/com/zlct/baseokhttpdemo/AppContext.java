@@ -1,7 +1,6 @@
 package cn.com.zlct.baseokhttpdemo;
 
-import android.app.Application;
-import android.os.Environment;
+import android.content.Context;
 import android.support.multidex.MultiDex;
 
 import com.activeandroid.ActiveAndroid;
@@ -9,12 +8,13 @@ import com.facebook.drawee.backends.pipeline.Fresco;
 import com.uuzuche.lib_zxing.activity.ZXingLibrary;
 import com.wenming.library.LogReport;
 import com.wenming.library.save.imp.CrashWriter;
+import com.wenming.library.upload.email.EmailReporter;
 
 import cn.com.zlct.baseokhttpdemo.util.ConfigConstants;
 import cn.com.zlct.baseokhttpdemo.util.OkHttpUtil;
 
 
-public class AppContext extends Application {
+public class AppContext extends com.activeandroid.app.Application {
 
     private int cartCount = 0;
     private static AppContext instance;
@@ -22,7 +22,6 @@ public class AppContext extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        MultiDex.install(this);
 
         instance = this;
         OkHttpUtil.initOkHttp();
@@ -81,5 +80,10 @@ public class AppContext extends Application {
     public static AppContext getInstance() {
         // 这里不用判断instance是否为空
         return instance;
+    }
+
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        MultiDex.install(this);
     }
 }

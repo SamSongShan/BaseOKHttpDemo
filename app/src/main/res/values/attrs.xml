@@ -41,4 +41,17 @@
         </attr>
         <attr name="selectedDay" format="string"/>
     </declare-styleable>
+
+    <!-- ratebar星级评论 -->
+    <declare-styleable name="RatingBarView">
+
+        <attr name="starImageSize" format="dimension" />
+        <attr name="starCount" format="integer" />
+        <attr name="starCountLevel" format="integer" />
+        <attr name="starPaddRight" format="dimension" />
+        <attr name="starEmpty" format="reference" />
+        <attr name="starFill" format="reference" />
+        <attr name="starClickable" format="boolean"/>
+
+    </declare-styleable>
 </resources>

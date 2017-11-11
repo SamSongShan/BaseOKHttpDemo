@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="cn.yipianfengye.android:zxing-library-2.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/864a057aa553a24bdf9fc4bc356efd5f45e2b382/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/864a057aa553a24bdf9fc4bc356efd5f45e2b382/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/864a057aa553a24bdf9fc4bc356efd5f45e2b382/output/jars/libs/zxing.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.yipianfengye.android/zxing-library/2.1/b2328eba84b31308a1b565469d72dc3ddaf4f226/zxing-library-2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
