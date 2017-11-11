@@ -33,7 +33,7 @@ import cn.com.zlct.baseokhttpdemo.custom.CircleTextView;
  * 获取手机相关信息
  */
 public class PhoneUtil {
- /**
+/**
      * 获取当前应用程序的包名
      * @param context 上下文对象
      * @return 返回包名
