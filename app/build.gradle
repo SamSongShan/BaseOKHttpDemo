@@ -87,4 +87,6 @@ dependencies {
     compile 'com.android.support:support-v4:25.3.1'
     compile 'cn.carbswang.android:NumberPickerView:1.1.1'
     apt 'com.jakewharton:butterknife-compiler:8.4.0'
+        compile 'com.github.wenmingvs:LogReport:1.0.3'
+
 }
