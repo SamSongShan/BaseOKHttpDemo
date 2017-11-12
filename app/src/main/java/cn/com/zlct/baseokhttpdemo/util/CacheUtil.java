@@ -17,7 +17,7 @@ import cn.com.zlct.baseokhttpdemo.custom.TipsAuthDialog;
 public class CacheUtil {
 
     private static final String TEXT_CACHE_DIR = Environment.getExternalStorageDirectory() +
-            "/Android/data/com.zlct.meihepayment/cache";//缓存路径
+            "/Android/data/cn.com.zlct.baseokhttpdemo/cache";//缓存路径
 
     /**
      * 获取缓存
