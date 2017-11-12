@@ -244,7 +244,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
 
                 } else {
                     // 授权失败
-                    Toast.makeText(MainActivity.this, "Some Permission is Denied", Toast.LENGTH_SHORT)
+
+                    Toast.makeText(MainActivity.this, "部分权限被拒绝，使用过程中可能会出现未知错误", Toast.LENGTH_SHORT)
                             .show();
                 }
             }
