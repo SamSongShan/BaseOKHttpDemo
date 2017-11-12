@@ -1,5 +1,6 @@
 package cn.com.zlct.baseokhttpdemo.util;
 
+import android.app.ActivityManager;
 import android.app.Application;
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -23,6 +24,7 @@ import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Enumeration;
+import java.util.List;
 import java.util.Locale;
 
 import cn.com.zlct.baseokhttpdemo.AppContext;

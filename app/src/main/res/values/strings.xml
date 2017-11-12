@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">点点租</string>
+    <string name="app_name">基础框架</string>
     <string name="passwordLimit">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
     <string name="idCardLimit">0123456789Xx</string>
     <string name="numDecimalLimit">0123456789.</string>

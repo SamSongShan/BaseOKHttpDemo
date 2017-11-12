@@ -90,6 +90,8 @@ public interface Constant {
         //打开相册请求码
         int AlbumCode = 0x0001;
 
+        int PermissionCode = 0x1001;
+
     }
 
     interface IdString {
