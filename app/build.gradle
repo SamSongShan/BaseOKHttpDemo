@@ -80,7 +80,6 @@ dependencies {
     compile 'com.google.code.gson:gson:2.8.0'
     compile 'com.facebook.fresco:fresco:1.0.0'
     compile 'com.jakewharton:butterknife:8.4.0'
-    compile 'com.michaelpardo:activeandroid:3.1.0-SNAPSHOT'
     compile 'com.github.wenmingvs:LogReport:1.0.3'
     compile 'com.github.d-max:spots-dialog:0.7@aar'
     compile 'cn.yipianfengye.android:zxing-library:2.1'

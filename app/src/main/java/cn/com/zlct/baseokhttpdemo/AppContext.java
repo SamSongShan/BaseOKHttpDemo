@@ -1,9 +1,9 @@
 package cn.com.zlct.baseokhttpdemo;
 
+import android.app.Application;
 import android.content.Context;
 import android.support.multidex.MultiDex;
 
-import com.activeandroid.ActiveAndroid;
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.uuzuche.lib_zxing.activity.ZXingLibrary;
 import com.wenming.library.LogReport;
@@ -14,7 +14,7 @@ import cn.com.zlct.baseokhttpdemo.util.ConfigConstants;
 import cn.com.zlct.baseokhttpdemo.util.OkHttpUtil;
 
 
-public class AppContext extends com.activeandroid.app.Application {
+public class AppContext extends Application {
 
     private int cartCount = 0;
     private static AppContext instance;
@@ -28,7 +28,6 @@ public class AppContext extends com.activeandroid.app.Application {
         Fresco.initialize(this, ConfigConstants.getImagePipelineConfig(this));
         /*JPushInterface.setDebugMode(true);
         JPushInterface.init(this);*/
-        ActiveAndroid.initialize(this);
         initCrashReport();
         ZXingLibrary.initDisplayOpinion(this);
 
@@ -74,7 +73,6 @@ public class AppContext extends com.activeandroid.app.Application {
     @Override
     public void onTerminate() {
         super.onTerminate();
-        ActiveAndroid.dispose();
     }
 
     public static AppContext getInstance() {
