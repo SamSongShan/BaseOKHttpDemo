@@ -35,8 +35,8 @@ public class ScreenshotUtils {
     }
 
     // 程序入口 截取ListView
-    public static void shootListView(RecyclerView recyclerView, String picpath) {
-        ScreenshotUtils.savePic(getRecyclerViewBitmap(recyclerView,picpath), picpath);
+    public static void shootRecyclerView(RecyclerView recyclerView, String picpath,int rawNum) {
+        ScreenshotUtils.savePic(getRecyclerViewBitmap(recyclerView,picpath,rawNum), picpath);
     }
 
 
