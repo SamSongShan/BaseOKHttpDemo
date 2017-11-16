@@ -34,9 +34,9 @@ public class ScreenshotUtils {
         ScreenshotUtils.savePic(getListViewBitmap(listView,picpath), picpath);
     }
 
-    // 程序入口 截取RecyclerView
-    public static void shootRecyclerView(RecyclerView recyclerView, String picpath,int rowNum) {
-        ScreenshotUtils.savePic(getRecyclerViewBitmap(recyclerView,picpath,rowNum), picpath);
+    // 程序入口 截取ListView
+    public static void shootListView(RecyclerView recyclerView, String picpath) {
+        ScreenshotUtils.savePic(getRecyclerViewBitmap(recyclerView,picpath), picpath);
     }
 
 
@@ -160,7 +160,7 @@ public class ScreenshotUtils {
         int h = 0;
         Bitmap bitmap;
         // 获取listView实际高度
-        for (int i = 0; i < Math.ceil(recyclerView.getChildCount()/rowNum); i++) {
+        for (int i = 0; i < recyclerView.getChildCount()/rowNum; i++) {
             h += recyclerView.getChildAt(i).getHeight();
         }
         Log.e(TAG, "实际高度:" + h);
