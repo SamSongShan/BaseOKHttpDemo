@@ -13,7 +13,7 @@ import android.widget.PopupWindow;
 
 /**
  * Created by 11355 on 2017/7/20.
- * 封装PopupWindow
+ * 封装PopupWindow  修改添加控制透明度方法
  */
 
 public class CustomPopupWindow {

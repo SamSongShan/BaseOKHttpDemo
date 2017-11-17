@@ -15,7 +15,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /**
- * 代码截屏工具
+ * 代码截屏工具 修改
  */
 
 public class ScreenshotUtils {
