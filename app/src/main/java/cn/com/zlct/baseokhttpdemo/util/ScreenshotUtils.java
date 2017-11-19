@@ -33,6 +33,8 @@ import java.util.Locale;
  * sendBroadcast(intent);
  * ToastUtil.initToast(this, "已保存");
  * }
+ *
+ * 
  */
 
 public class ScreenshotUtils {
