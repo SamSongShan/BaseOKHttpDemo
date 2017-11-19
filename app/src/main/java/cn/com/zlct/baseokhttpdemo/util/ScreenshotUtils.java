@@ -23,8 +23,8 @@ import java.util.Locale;
 
 /**
  * 代码截屏工具 修改
- * <p>
- * <p>
+ *
+ * 
  * //保存后发送广播 弹出提示
  * private  void saveSuccess(File file){
  * Intent intent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
@@ -32,7 +32,6 @@ import java.util.Locale;
  * intent.setData(uri);
  * sendBroadcast(intent);
  * ToastUtil.initToast(this, "已保存");
- * <p>
  * }
  */
 
