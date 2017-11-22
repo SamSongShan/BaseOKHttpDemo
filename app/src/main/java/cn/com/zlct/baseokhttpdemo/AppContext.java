@@ -80,6 +80,7 @@ public class AppContext extends Application {
         return instance;
     }
 
+    @Override
     protected void attachBaseContext(Context base) {
         super.attachBaseContext(base);
         MultiDex.install(this);

@@ -1,11 +1,13 @@
 package cn.com.zlct.baseokhttpdemo.base;
 
 import android.content.pm.ActivityInfo;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import cn.com.zlct.baseokhttpdemo.util.StatusBarUtils;
 
 /**
  * 所有Activity的基类
@@ -20,6 +22,8 @@ public abstract class BaseActivity extends AppCompatActivity {
 
         setContentView(getViewResId());
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//手机竖屏
+
+        StatusBarUtils.setStatusBarLightMode(this, Color.parseColor("#000000"));
         unbinder = ButterKnife.bind(this);
         init();
         loadData();
