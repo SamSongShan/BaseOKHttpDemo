@@ -22,6 +22,7 @@ public class ToolBarUtil {
      */
     public static void initToolBar(Toolbar toolBar, String title, View.OnClickListener clickListener) {
 //        toolBar.setBackgroundColor(ContextCompat.getColor(toolBar.getContext(), R.color.colorAccent));
+        PhoneUtil.hideKeyboard(toolBar);
         init(toolBar, title, clickListener);
     }
 
@@ -35,6 +36,7 @@ public class ToolBarUtil {
     public static void initToolBar(Toolbar toolBar, String title, View.OnClickListener clickListener, String next,
                                    View.OnClickListener clickListenerNext) {
 //        toolBar.setBackgroundColor(ContextCompat.getColor(toolBar.getContext(), R.color.colorAccent));
+        PhoneUtil.hideKeyboard(toolBar);
         init(toolBar, title, clickListener, next, clickListenerNext);
     }
 
@@ -48,6 +50,8 @@ public class ToolBarUtil {
     public static CircleTextView initToolBar(Toolbar toolBar, String title, View.OnClickListener clickListener, int resId,
                                              View.OnClickListener clickListenerNext) {
 //        toolBar.setBackgroundColor(ContextCompat.getColor(toolBar.getContext(), R.color.colorAccent));
+        PhoneUtil.hideKeyboard(toolBar);
+
         init(toolBar, title, clickListener, resId, clickListenerNext);
         CircleTextView circleView = (CircleTextView) toolBar.findViewById(R.id.toolbar_iconCartDot);
         circleView.setBackgroundColor(Color.WHITE);
@@ -59,6 +63,7 @@ public class ToolBarUtil {
      */
     public static void initToolBar(Toolbar toolBar, View.OnClickListener clickListener) {
 //        toolBar.setBackgroundColor(ContextCompat.getColor(toolBar.getContext(), R.color.colorAccent));
+        PhoneUtil.hideKeyboard(toolBar);
         View toolbarBack =  toolBar.findViewById(R.id.toolbar_searchBack);
         View toolbarSearch =  toolBar.findViewById(R.id.toolbar_searchGo);
         toolbarBack.setOnClickListener(clickListener);
