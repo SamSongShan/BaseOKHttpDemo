@@ -129,7 +129,7 @@ public class OkHttpUtil {
                 OutputStream os = new FileOutputStream(new File(filePath));
                 byte[] bs = new byte[1024];
                 int len;
-                int count = 0;
+                long count = 0l;
                 while ((len = is.read(bs)) != -1) {
                     count += len;
                     os.write(bs, 0, len);
@@ -281,8 +281,8 @@ public class OkHttpUtil {
             @Override
             public void writeTo(BufferedSink sink) throws IOException {
                 Source source = Okio.source(new ByteArrayInputStream(bytes));
-                int readCount = 0;//一共上传了多少字节
-                int readSize;//当前上传了多少字节
+                long readCount = 0L;//一共上传了多少字节
+                long readSize;//当前上传了多少字节
                 Buffer buffer = new Buffer();
                 while (true) {
                     readSize = (int) source.read(buffer, 1024);
