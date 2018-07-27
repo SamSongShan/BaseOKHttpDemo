@@ -11,6 +11,7 @@ import com.wenming.library.save.imp.CrashWriter;
 import com.wenming.library.upload.email.EmailReporter;
 
 import cn.com.zlct.baseokhttpdemo.util.ConfigConstants;
+import cn.com.zlct.baseokhttpdemo.util.LogUtils;
 import cn.com.zlct.baseokhttpdemo.util.OkHttpUtil;
 
 
@@ -22,7 +23,7 @@ public class AppContext extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-
+        LogUtils.setDebug(true);
         instance = this;
         OkHttpUtil.initOkHttp();
         Fresco.initialize(this, ConfigConstants.getImagePipelineConfig(this));
