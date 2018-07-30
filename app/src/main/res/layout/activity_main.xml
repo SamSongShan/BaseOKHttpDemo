@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="cn.com.zlct.baseokhttpdemo.MainActivity">
-
+   <include layout="@layout/toolbar_right_icon"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

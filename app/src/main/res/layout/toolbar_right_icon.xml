@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/FillToolbar"
+
     android:id="@+id/toolbar_icon"
+    style="@style/FillToolbar"
     android:layout_width="match_parent"
-    android:layout_height="44dp"
-    android:background="@color/colorAccent"
-     >
+    android:layout_height="66dp"
+    android:paddingTop="22dp"
+    android:background="@color/colorAccent">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <ImageButton
             android:id="@+id/toolbar_iconBack"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:padding="12dp"
+            android:background="@null"
             android:gravity="center_vertical"
-            android:src="@drawable/toolbar_back"
-            android:background="@null"/>
+            android:padding="12dp"
+            android:src="@drawable/toolbar_back" />
+
         <TextView
             android:id="@+id/toolbar_iconTitle"
             android:layout_width="wrap_content"
@@ -24,38 +28,41 @@
             android:layout_centerInParent="true"
             android:layout_marginLeft="25dp"
             android:layout_marginRight="25dp"
-            android:maxLines="1"
             android:ellipsize="end"
-            android:textSize="20sp"
-            android:textColor="@color/colorWhite"/>
+            android:maxLines="1"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
         <ImageButton
             android:id="@+id/toolbar_iconNext"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
-            android:visibility="invisible"
-            android:padding="12dp"
             android:layout_marginRight="5dp"
+            android:background="@null"
             android:gravity="center_vertical"
-            android:background="@null"/>
+            android:padding="12dp"
+            android:visibility="invisible" />
+
         <cn.com.zlct.baseokhttpdemo.custom.CircleTextView
             android:id="@+id/toolbar_iconCartDot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/toolbar_iconNext"
-            android:layout_marginTop="7dp"
             android:layout_marginLeft="-21dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/toolbar_iconNext"
             android:gravity="center"
             android:padding="2px"
-            android:textSize="9sp"
-            android:visibility="gone"
             android:textColor="@color/colorAccent"
-            android:textStyle="bold"/>
+            android:textSize="9sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
         <View
             android:id="@+id/toolbar_iconLine"
             android:layout_width="match_parent"
             android:layout_height="2px"
             android:layout_alignParentBottom="true"
-            android:background="@color/colorLightGray"/>
+            android:background="@color/colorLightGray" />
     </RelativeLayout>
 </android.support.v7.widget.Toolbar>
