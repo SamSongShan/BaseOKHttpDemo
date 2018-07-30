@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
-
     android:id="@+id/toolbar_icon"
     style="@style/FillToolbar"
     android:layout_width="match_parent"
-    android:layout_height="66dp"
-    android:paddingTop="22dp"
-    android:background="@color/colorAccent">
+    android:layout_height="?attr/actionBarSize"
+    android:layout_marginTop="@dimen/tool_bar_top_margin"
+    android:background="@color/colorAccent"
+    android:paddingTop="@dimen/tool_bar_top_padding">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -30,6 +30,7 @@
             android:layout_marginRight="25dp"
             android:ellipsize="end"
             android:maxLines="1"
+            android:text=""
             android:textColor="@color/colorWhite"
             android:textSize="20sp" />
 
