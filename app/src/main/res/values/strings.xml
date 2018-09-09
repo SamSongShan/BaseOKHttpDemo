@@ -4,9 +4,5 @@
     <string name="idCardLimit">0123456789Xx</string>
     <string name="numDecimalLimit">0123456789.</string>
     <string name="numberLimit">0123456789</string>
-    <!-- 左右能填满的Toolbar样式 -->
-    <style name="FillToolbar" parent="Widget.AppCompat.ActionBar">
-        <item name="contentInsetStart">0dp</item>
-        <item name="contentInsetEnd">0dp</item>
-    </style>
+
 </resources>
