@@ -21,7 +21,7 @@ import java.lang.reflect.Method;
 
 public class StatusBarUtils {
 
-    //状态栏颜色
+
     public static void setStatusBarColor(Activity activity, int statusColor) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             StatusBarLollipop.setStatusBarColor(activity, statusColor);
@@ -30,7 +30,6 @@ public class StatusBarUtils {
         }
     }
 
-    //透明状态栏
     public static void translucentStatusBar(Activity activity) {
         translucentStatusBar(activity, false);
     }
@@ -43,7 +42,6 @@ public class StatusBarUtils {
         }
     }
 
-    //设置可折叠状态栏颜色
     public static void setStatusBarColorForCollapsingToolbar(@NonNull Activity activity, AppBarLayout appBarLayout, CollapsingToolbarLayout collapsingToolbarLayout,
                                                              Toolbar toolbar, @ColorInt int statusColor) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -53,19 +51,9 @@ public class StatusBarUtils {
         }
     }
 
-    //设置状态栏颜色  并且黑字体状态栏文字
     public static void setStatusBarLightMode(Activity activity, int color) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            //判断是否为小米或魅族手机，如果是则将状态栏文字改为黑色
-            if (MIUISetStatusBarLightMode(activity, true) || FlymeSetStatusBarLightMode(activity, true)) {
-                //设置状态栏为指定颜色
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {//5.0
-                    activity.getWindow().setStatusBarColor(color);
-                } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {//4.4
-                    //调用修改状态栏颜色的方法
-                    setStatusBarColor(activity, color);
-                }
-            } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                 //如果是6.0以上将状态栏文字改为黑色，并设置状态栏颜色
                 activity.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
                 activity.getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
@@ -77,6 +65,14 @@ public class StatusBarUtils {
                 if (mChildView != null) {
                     mChildView.setFitsSystemWindows(true);
                     ViewCompat.requestApplyInsets(mChildView);
+                } //判断是否为小米或魅族手机，如果是则将状态栏文字改为黑色
+            } else if (MIUISetStatusBarLightMode(activity, true) || FlymeSetStatusBarLightMode(activity, true)) {
+                //设置状态栏为指定颜色
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {//5.0
+                    activity.getWindow().setStatusBarColor(color);
+                } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {//4.4
+                    //调用修改状态栏颜色的方法
+                    setStatusBarColor(activity, color);
                 }
             }
         }

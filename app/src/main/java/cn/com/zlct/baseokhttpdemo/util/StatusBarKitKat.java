@@ -18,7 +18,11 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 
+
 import java.lang.reflect.Field;
+
+import cn.com.zlct.baseokhttpdemo.R;
+
 
 @TargetApi(Build.VERSION_CODES.KITKAT)
 class StatusBarKitKat {
@@ -51,12 +55,13 @@ class StatusBarKitKat {
         View view = activity.findViewById(action_bar_id);
         if (view != null) {
            TypedValue typedValue = new TypedValue();
-            if (activity.getTheme().resolveAttribute(android.R.attr.actionBarSize, typedValue, true)) {
+            if (activity.getTheme().resolveAttribute(R.attr.actionBarSize, typedValue, true)) {
                 int actionBarHeight = TypedValue.complexToDimensionPixelSize(typedValue.data, activity.getResources().getDisplayMetrics());
                 StatusBarUtils.setContentTopPadding(activity, actionBarHeight);
             }
         }
     }
+
     static void translucentStatusBar(Activity activity) {
         Window window = activity.getWindow();
         //设置Window为透明
