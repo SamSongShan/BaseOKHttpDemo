@@ -69,6 +69,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
     }
 
     private void downLoadApp() {
+
         downloadDialog = DownloadDialog.newInstance(PhoneUtil.getAppName(this) + "versionName", isForce);
         downloadDialog.show(getFragmentManager(), "download");
         filePath = Environment.getExternalStorageDirectory() + "/Download/" + PhoneUtil.getAppName(this) +
