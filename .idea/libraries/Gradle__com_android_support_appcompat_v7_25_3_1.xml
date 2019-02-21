@@ -1,12 +1,15 @@
 <component name="libraryTable">
   <library name="Gradle: com.android.support:appcompat-v7-25.3.1">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.android/build-cache/178191d9267334179a95b5c5e928da757d8bf7a3/output/annotations.zip!/" />
+    </ANNOTATIONS>
     <CLASSES>
-      <root url="file://$USER_HOME$/.android/build-cache/01c4cecff070dc9b94d1f53f4e1c1320fe4be621/output/res" />
-      <root url="jar://$USER_HOME$/.android/build-cache/01c4cecff070dc9b94d1f53f4e1c1320fe4be621/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/178191d9267334179a95b5c5e928da757d8bf7a3/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/178191d9267334179a95b5c5e928da757d8bf7a3/output/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://E:/sdk/extras/android/m2repository/com/android/support/appcompat-v7/25.3.1/appcompat-v7-25.3.1-sources.jar!/" />
+      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/extras/android/m2repository/com/android/support/appcompat-v7/25.3.1/appcompat-v7-25.3.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

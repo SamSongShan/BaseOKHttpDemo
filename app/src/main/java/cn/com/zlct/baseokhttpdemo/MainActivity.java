@@ -9,11 +9,14 @@ import android.os.Build;
 import android.os.Environment;
 import android.os.Handler;
 import android.support.annotation.RequiresApi;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.content.FileProvider;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,6 +26,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import butterknife.BindView;
 import cn.com.zlct.baseokhttpdemo.base.BaseActivity;
 import cn.com.zlct.baseokhttpdemo.custom.DownloadDialog;
 import cn.com.zlct.baseokhttpdemo.util.OkHttpUtil;
@@ -32,16 +36,20 @@ import cn.com.zlct.baseokhttpdemo.util.ToastUtil;
 import static android.R.attr.versionName;
 
 
-public class MainActivity extends BaseActivity implements View.OnClickListener, OkHttpUtil.OnProgressListener {
+public class MainActivity extends BaseActivity implements View.OnClickListener, OkHttpUtil.OnProgressListener, RadioGroup.OnCheckedChangeListener {
+    @BindView(R.id.rg_mainTab)
+    RadioGroup rgMainTab;
+
 
     private DownloadDialog downloadDialog;
     private String filePath;
     private Handler handler = new Handler();
     private boolean isForce = false;//是否强制升级
+    private int page;//要启动的Fragment的页数
 
     private boolean isExit = false;//退出标识
 
-
+    FragmentManager fragmentManager;
     final private int REQUEST_CODE_ASK_MULTIPLE_PERMISSIONS = 124;
 
 
@@ -56,6 +64,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
 
         if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
             checkPermissions();
+        rgMainTab.setOnCheckedChangeListener(this);
+
     }
 
     private void downLoadApp() {
@@ -265,4 +275,49 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
     }
 
 
+    @Override
+    public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+        if (fragmentManager == null) {
+            fragmentManager = getSupportFragmentManager();
+
+        }
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        hideFragments(transaction);
+
+        switch (checkedId) {
+            case R.id.rb_mainTab0://首页
+               /* page = 0;
+                homeFragment=null;
+                if ("1".equals(SharedPreferencesUtil.getWechatPayType(this))) {
+                    SharedPreferencesUtil.saveWechatPayType(this, "0");
+                    //homeFragment.getdata();
+                    homeFragment = null;
+                }
+                if (homeFragment == null) {
+                    homeFragment = Home2vFragment.instance();
+                    homeFragment.setJump(this);
+
+                    transaction.add(R.id.fl_main, homeFragment, "0");
+                } else {
+                    homeFragment.setCity();
+                    homeFragment.onRefreshState();
+                    transaction.show(homeFragment);
+
+
+                }
+                break;*/
+        }
+        transaction.commitAllowingStateLoss();
+    }
+
+    /**
+     * 先隐藏所有Fragment
+     */
+    private void hideFragments(FragmentTransaction transaction) {
+        /*if (homeFragment != null) {
+            transaction.hide(homeFragment);
+        }*/
+
+    }
 }

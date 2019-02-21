@@ -9,13 +9,89 @@
     android:background="@color/colorBg"
     tools:context="cn.com.zlct.baseokhttpdemo.MainActivity">
    <include layout="@layout/toolbar_right_icon"/>
-    <TextView
-        android:layout_width="wrap_content"
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- <View
+         android:layout_width="match_parent"
+         android:layout_height="1dp"
+         android:background="@drawable/mainline_bg" />-->
+
+
+
+    <RadioGroup
+        android:elevation="5dp"
+        android:id="@+id/rg_mainTab"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_mainTab0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:button="@null"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/selector_main_tab0"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="主页"
+            android:textColor="@drawable/selector_color_red_black_check"
+            android:textSize="10sp" />
+        <RadioButton
+            android:id="@+id/rb_mainTab1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:button="@null"
+            android:drawablePadding="1dp"
+            android:drawableTop="@drawable/selector_main_tab1"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingTop="6dp"
+            android:text="贷款大全"
+            android:textColor="@drawable/selector_color_red_black_check"
+            android:textSize="10sp" />
+        <RadioButton
+            android:id="@+id/rb_mainTab2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:button="@null"
+            android:drawablePadding="1dp"
+            android:drawableTop="@drawable/selector_main_tab2"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingTop="6dp"
+            android:text="必下款"
+            android:textColor="@drawable/selector_color_red_black_check"
+            android:textSize="10sp" />
+
+
+        <RadioButton
+            android:id="@+id/rb_mainTab3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:button="@null"
+            android:drawablePadding="1dp"
+            android:drawableTop="@drawable/selector_main_tab3"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingTop="6dp"
+            android:text="个人中心"
+            android:textColor="@drawable/selector_color_red_black_check"
+            android:textSize="10sp" />
+
+
+
+
+    </RadioGroup>
 
 </LinearLayout>

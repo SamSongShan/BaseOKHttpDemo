@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: cn.carbswang.android:NumberPickerView-1.1.1">
     <CLASSES>
-      <root url="file://$USER_HOME$/.android/build-cache/27a21bbf2eaca79b0a6c380e7fed2206df330361/output/res" />
-      <root url="jar://$USER_HOME$/.android/build-cache/27a21bbf2eaca79b0a6c380e7fed2206df330361/output/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/6366405f30bf2ddd02c1c64955d7000c5680bc5c/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/6366405f30bf2ddd02c1c64955d7000c5680bc5c/output/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
