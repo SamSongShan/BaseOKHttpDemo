@@ -133,7 +133,13 @@ public class OkHttpUtil {
                 while ((len = is.read(bs)) != -1) {
                     count += len;
                     os.write(bs, 0, len);
-                    progressListener.onProgress((int) (count * 100 / length));
+                    if (count * 100 == length) {
+                        progressListener.onProgress(100);
+
+                    } else {
+                        progressListener.onProgress((int) (((double) (count * 100 / length))));
+
+                    }
                 }
                 is.close();
                 os.close();
